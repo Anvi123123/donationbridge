@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" 
+        rel="stylesheet" /> 
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>DonationBridge</title>
+    <link rel="shortcut icon" href="home images/Screenshot_2023-11-18_at_12.11.43_AM-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <!-- logo-->
+                <img src="home images/Screenshot_2023-11-18_at_12.11.43_AM-removebg-preview.png" alt="logo" class="navbar__logo" />
+            </div>
+            <div class="navbar__nav__items">
+                <button class="nav__item button__primary" onclick="redirectToOrderPage()" >Donate Now</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero__container">
+            <div class="hero__image__container">
+                <img src="ngo's/kids.png" alt="hero image" class="hero__image" />
+                <img src="Assets/svg/blob.svg" alt="hero image shape" class="hero__image__shape" />
+                <img src="Assets/svg/herobgpattren.svg" alt="hero image shape" class="hero__image__pattren" />
+            </div>
+            </div>
+            <div class="hero__description">
+                <h1 class="hero__description__text">Welcome to Donation Bridge, where your generosity finds purpose, connecting your donations directly to those in need.</h1>
+                <button class="button__primary" onclick="redirectToOrderPage()"  >Donate Now</button>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <!-- <section class="video__footage__container">
+            <div class="video__footage__gradient__bg"></div>
+            <div class="video__footage">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/323795266" width: 100% height="320" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video__text">Your donate will be prepared safely with an experienced chef, without compromising on the quality and hygiene.</div>
+        </section> -->
+
+        <!-- Explore NGOs -->
+        <section class="explore__NGOs__container">
+            <h1 class="explore__NGOs__text">Explore our NGOs</h1>
+            <div class="explore__NGOs__bg__gradient"></div>
+            <div class="explore__NGOs__lists">
+                <!-- sahyaogr -->
+                <div class="donate__card">
+                    <div class="donate">
+                        <img src="ngo's/sahyog foundation.png" alt="burger image" class="donate__image" />
+                    </div>
+                    <div class="donate__card__description">
+                        <h3 class="donate__title">
+                            Sahyog Human Foundation</h3>
+                        <p class="donate__description">B-445, 2nd Floor, Nehru Ground, Faridabad - 121001 (Near NIT)
+                            <span style="color: red;">3+</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Aangan -->
+                <div class="donate__card donate__card__move__up">
+                    <div class="donate">
+                        <img src="ngo's/aanagan.png" alt="burger image" class="donate__image" />
+                    </div>
+                    <div class="donate__card__description">
+                        <h3 class="donate__title">Aangan</h3>
+                        <p class="donate__description">C-200, Noida Sector 105, Noida - 201304
+                            <span style="color: red;">3+</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- WCC -->
+                <div class="donate__card">
+                    <div class="donate">
+                        <img src="ngo's/wwc.png" alt="burger image" class="donate__image" />
+                    </div>
+                    <div class="donate__card__description">
+                        <h3 class="donate__title">WARRIOR WITHOUT CAUSE</h3>
+                        <p class="donate__description">Sarita Vihar, New Delhi 
+                            <span style="color: red;">3+</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="explore__NGOs__view__more">
+                <button class="view__more__button">View more</button>
+            </div>
+        </section>
+
+        <!-- donation list -->
+        <section class="donation__container">
+            <h2 class="donation__text">Donation Drives with Donation Bridge</h2>
+            <div class="donation__images__container">
+                <div class="donation__images__row__one">
+                    <div class="donation__image__1">
+                        <img src="ngo's/pic1.png" alt="donation one" class="donation__1" />
+                    </div>
+                    <div class="donation__image__2">
+                        <img src="ngo's/pic2.png" alt="donation two" class="donation__2" />
+                    </div>
+                </div>
+                <div class="donation__images__row__two">
+                    <div class="donation__image__3">
+                        <img src="ngo's/pic3.png" alt="donation three" class="donation__3" />
+                    </div>
+                    <div class="donation__image__4">
+                        <img src="ngo's/pic4.png" alt="donation four" class="donation__4" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Update Section -->
+        <section class="email__subcribe__container">
+            <div class="subscribe__items">
+              <h1 class="email__text" >Check your Status</h1>
+              <div class="email__subcribe__input__field">
+                <div>
+                  <input
+                    type="email"
+                    placeholder="email@email.com"
+                    class="email__input"
+                  />
+                </div>
+                <button class="email__button" id="update" onclick="showalert()">Get Updates</button>
+              </div>
+            </div>
+          </section>
+         
+        
+
+        <!-- Quote Section -->
+        <section class="quote__container">
+            <div class="quote__image__container">
+                <img src="ngo's/bg kids.png" alt="donation background image" class="quote__image" />
+            </div>
+            <div class="quote__image__overlay"></div>
+                <h3 class="quote__text">Let's donate for a cause <br>
+                    ''Connecting Kindness, Delivering Change''</h3>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__brand">
+                <img src="home images/Screenshot_2023-11-18_at_12.11.43_AM-removebg-preview.png" alt="logo" class="footer__logo" />
+            </div>
+            <div class="footer__items__container">
+                <div class="footer__items__list">
+                    <h3 class="footer__item"> <a href="index.html">Home</a></h3> 
+                    <h3 class="footer__item"> <a href="others/about.html">About</a>  </h3>
+                    <h3 class="footer__item"><a href="others/contactus.html">Contact Us</a></h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
